@@ -1,7 +1,7 @@
 {
-  "name": "x-util",
-  "version": "1.0.0",
-  "description": "Javascript Toolbox",
+  "name": "xurei-util",
+  "version": "1.0.2",
+  "description": "Javascript Toolbox from xurei",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
