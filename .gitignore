@@ -1,3 +1,7 @@
+*.iml
+.*
+!.gitignore
+
 # Logs
 logs
 *.log

@@ -1,0 +1,20 @@
+{
+  "name": "x-util",
+  "version": "1.0.0",
+  "description": "Javascript Toolbox",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xurei/x-util.git"
+  },
+  "author": "Olivier Bourdoux",
+  "license": "MIT",
+  "keywords": ["isset"],
+  "bugs": {
+    "url": "https://github.com/xurei/x-util/issues"
+  },
+  "homepage": "https://github.com/xurei/x-util#readme"
+}
