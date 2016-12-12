@@ -4,7 +4,7 @@
   "description": "Javascript Toolbox from xurei",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha tests"
   },
   "repository": {
     "type": "git",
@@ -12,9 +12,15 @@
   },
   "author": "Olivier Bourdoux",
   "license": "MIT",
-  "keywords": ["isset"],
+  "keywords": [
+    "isset"
+  ],
   "bugs": {
     "url": "https://github.com/xurei/x-util/issues"
   },
-  "homepage": "https://github.com/xurei/x-util#readme"
+  "homepage": "https://github.com/xurei/x-util#readme",
+  "devDependencies": {
+    "chai": "latest",
+    "mocha": "^3.2.0"
+  }
 }
