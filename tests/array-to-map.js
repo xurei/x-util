@@ -10,7 +10,7 @@ describe('arrayToMap', function() {
 		expect(() => arrayToMap("string")).to.throw(Error);
 		expect(() => arrayToMap({1: 'this', 2:'is', 3:'weird'})).to.throw(Error);
 	});
-	it('should convert the array as specified', function() {
+	it('should convert the array using the keyFn provided', function() {
 		var array = [
 			{id:1, text:'foo'},
 			{id:"plop", text:'bar'},
@@ -21,5 +21,11 @@ describe('arrayToMap', function() {
 		expect(map[1].text).to.be.equal('foo');
 		expect(map.plop.text).to.be.equal('bar');
 		expect(map[null].text).to.be.equal('hello world');
+	});
+	it('should convert an empty array to an empty object', function() {
+		var array = [];
+		var map = arrayToMap(array, (a) => a.id);
+		
+		expect(map).to.deep.equal({});
 	});
 });

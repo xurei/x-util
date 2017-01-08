@@ -13,5 +13,7 @@ describe('isset', function() {
 		expect(isset("undefined")).to.be.true;
 		expect(isset(42)).to.be.true;
 		expect(isset({})).to.be.true;
+		expect(isset((a) => true)).to.be.true;
+		expect(isset((a) => null)).to.be.true;
 	});
 });
