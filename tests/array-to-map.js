@@ -22,6 +22,21 @@ describe('arrayToMap', function() {
 		expect(map.plop.text).to.be.equal('bar');
 		expect(map[null].text).to.be.equal('hello world');
 	});
+	it('should convert the array using the valueFn provided', function() {
+		var array = [{
+			key: "key",
+			value: "value"
+		},
+		{
+			key: "key1",
+			value: "value1"
+		}];
+		var map = arrayToMap(array, (a) => a.key, (a) => a.value);
+		expect(map).to.deep.equal({
+			key: "value",
+			key1: "value1"
+		});
+	});
 	it('should convert an empty array to an empty object', function() {
 		var array = [];
 		var map = arrayToMap(array, (a) => a.id);

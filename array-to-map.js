@@ -1,4 +1,4 @@
-module.exports = function arrayToMap(array, keyfn) {
+module.exports = function arrayToMap(array, keyfn, valuefn = a => a) {
 	if (!Array.isArray(array)) {
 		throw new TypeError("expected array, got " + typeof(array));
 	}
@@ -6,7 +6,7 @@ module.exports = function arrayToMap(array, keyfn) {
 	var out = {};
 	
 	for (var i=0; i<array.length; ++i) {
-		out[keyfn(array[i])] = array[i];
+		out[keyfn(array[i])] = valuefn(array[i]);
 	}
 	
 	return out;
