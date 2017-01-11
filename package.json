@@ -4,7 +4,7 @@
   "description": "Javascript Toolbox from xurei",
   "main": "index.js",
   "scripts": {
-    "test": "mocha tests"
+    "test": "mocha --reporter spec tests"
   },
   "repository": {
     "type": "git",

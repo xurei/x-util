@@ -1,6 +1,8 @@
 # xurei-util
 Javascript Toolbox
 
+[![wercker status](https://app.wercker.com/status/ce7d4d3b6756d08c626eda9406970052/s/master "wercker status")](https://app.wercker.com/project/byKey/ce7d4d3b6756d08c626eda9406970052)
+
 ## isset(variable)
 Check that a variable is defined and not null.
 
