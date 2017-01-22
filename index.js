@@ -1,5 +1,10 @@
 module.exports = {
 	isset: require('./isset'),
-	lsDir: require('./ls-dir'),
 	arrayToMap: require('./array-to-map'),
 };
+
+if (!require('is-browser')) {
+	module.exports = Object.assign(module.exports, {
+		lsDir: require('./ls-dir'),
+	});
+}
