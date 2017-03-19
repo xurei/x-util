@@ -1,7 +1,7 @@
 const chai = require('chai');
 const expect = chai.expect;
 
-const isset = require('../isset');
+const isset = require('../').isset;
 
 describe('isset', function() {
 	it('should return false if null or undefined', function() {

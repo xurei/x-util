@@ -1,7 +1,7 @@
 const chai = require('chai');
 const expect = chai.expect;
 
-const arrayMin = require('../array-min');
+const arrayMin = require('../').arrayMin;
 
 describe('arrayMin', function() {
 	it('should throw if input is not an array', function() {

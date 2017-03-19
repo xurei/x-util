@@ -1,7 +1,7 @@
 const chai = require('chai');
 const expect = chai.expect;
 
-const arrayToMap = require('../array-to-map');
+const arrayToMap = require('../').arrayToMap;
 
 describe('arrayToMap', function() {
 	it('should throw if input is not an array', function() {
