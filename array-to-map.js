@@ -1,4 +1,8 @@
-module.exports = function arrayToMap(array, keyfn, valuefn = a => a) {
+module.exports = function arrayToMap(array, keyfn, valuefn) {
+	if (typeof(valuefn) === 'undefined') {
+		valuefn = function (a) {return a;};
+	}
+	
 	if (!Array.isArray(array)) {
 		throw new TypeError("expected array, got " + typeof(array));
 	}
