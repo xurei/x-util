@@ -4,7 +4,8 @@
   "description": "Javascript Toolbox from xurei",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --reporter spec tests"
+    "pretest": "node_modules/.bin/eslint .",
+    "test": "node_modules/.bin/mocha --reporter spec tests"
   },
   "repository": {
     "type": "git",
@@ -21,7 +22,9 @@
   "homepage": "https://github.com/xurei/x-util#readme",
   "devDependencies": {
     "chai": "latest",
-    "mocha": "^3.2.0"
+    "eslint": "^3.19.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "mocha": "^3.4.2"
   },
   "dependencies": {}
 }
