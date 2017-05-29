@@ -4,7 +4,7 @@ module.exports = function arrayMin(array, comparefn) {
 	}
 	
 	if (!Array.isArray(array)) {
-		throw new TypeError("expected array, got " + typeof(array));
+		throw new TypeError('expected array, got ' + typeof(array));
 	}
 	
 	if (array.length === 0) {

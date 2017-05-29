@@ -8,7 +8,7 @@ describe('arrayMax', function() {
 		expect(() => arrayMax()).to.throw(Error);
 		expect(() => arrayMax(42)).to.throw(Error);
 		expect(() => arrayMax(null)).to.throw(Error);
-		expect(() => arrayMax("string")).to.throw(Error);
+		expect(() => arrayMax('string')).to.throw(Error);
 		expect(() => arrayMax({1: 'this', 2:'is', 3:'weird'})).to.throw(Error);
 	});
 	it('should return undefined if the array is empty', function() {

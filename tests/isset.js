@@ -10,10 +10,10 @@ describe('isset', function() {
 	});
 	it('should return true for anything else', function() {
 		expect(isset([])).to.be.true;
-		expect(isset("undefined")).to.be.true;
+		expect(isset('undefined')).to.be.true;
 		expect(isset(42)).to.be.true;
 		expect(isset({})).to.be.true;
-		expect(isset((a) => true)).to.be.true;
-		expect(isset((a) => null)).to.be.true;
+		expect(isset(() => true)).to.be.true;
+		expect(isset(() => null)).to.be.true;
 	});
 });

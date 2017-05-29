@@ -4,7 +4,7 @@ module.exports = function arrayToMap(array, keyfn, valuefn) {
 	}
 	
 	if (!Array.isArray(array)) {
-		throw new TypeError("expected array, got " + typeof(array));
+		throw new TypeError('expected array, got ' + typeof(array));
 	}
 	
 	var out = {};

@@ -8,7 +8,7 @@ describe('arrayMin', function() {
 		expect(() => arrayMin()).to.throw(Error);
 		expect(() => arrayMin(42)).to.throw(Error);
 		expect(() => arrayMin(null)).to.throw(Error);
-		expect(() => arrayMin("string")).to.throw(Error);
+		expect(() => arrayMin('string')).to.throw(Error);
 		expect(() => arrayMin({1: 'this', 2:'is', 3:'weird'})).to.throw(Error);
 	});
 	it('should return undefined if the array is empty', function() {
