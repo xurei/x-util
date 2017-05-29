@@ -1,6 +1,7 @@
 {
 	"plugins": [
-		"promise"
+		"promise",
+		"security"
 	],
 
 	"parserOptions": {
@@ -21,6 +22,7 @@
 		"curly": "warn",
 		"quotes": ["warn", "single"],
 
+		"security/detect-pseudoRandomBytes": "error",
 		"promise/always-return": "error",
 		"promise/no-return-wrap": "error",
 		"promise/param-names": "error",
